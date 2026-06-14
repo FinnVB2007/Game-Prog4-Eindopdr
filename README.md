@@ -1,11 +1,5 @@
-# Les 7 Hands On Mario
+# Mario spin
 
 ![mario](./public/images/mario.gif)
 
-Hands on :
-
-- Physics engine aan zetten
-- Muntjes bouncen, platforms blijven staan
-- Mario besturen
-- Camera, Parralax background
-- Game over
+A simpel game about mario killing zombies by spinning
