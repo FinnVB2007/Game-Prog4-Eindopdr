@@ -1,9 +1,6 @@
 import { Actor, Vector, ParallaxComponent, Scene, Label, Font, Color } from 'excalibur'
 import { Resources } from "./resources.js"
 import { Mario } from "./mario.js"
-import { Platform } from "./platform.js"
-import { Crate } from "./crate.js"
-import { Coin } from "./coin.js"
 import { Enemy } from "./enemy.js"
 
 export class Level extends Scene {
@@ -18,9 +15,10 @@ export class Level extends Scene {
         const bgSprite = Resources.Background1.toSprite()
         bg.graphics.use(bgSprite)
         bg.pos = new Vector(engine.screen.resolution.width / 2, engine.screen.resolution.height / 2)
+        const stretchFactor = 3
         bg.scale = new Vector(
-            engine.screen.resolution.width / bgSprite.width,
-            engine.screen.resolution.height / bgSprite.height
+            (engine.screen.resolution.width / bgSprite.width) * stretchFactor,
+            (engine.screen.resolution.height / bgSprite.height) * stretchFactor
         )
         bg.z = -1000
         this.add(bg)

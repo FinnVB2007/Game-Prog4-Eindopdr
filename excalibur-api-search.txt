@@ -1,0 +1,456 @@
+﻿
+node_modules\excalibur\build\dist\excalibur.development.js:6427:    draw(ex, op
+tions = { color: Color.Yellow }) {
+node_modules\excalibur\build\dist\excalibur.development.js:9416:    draw(ex, x,
+ y) {
+node_modules\excalibur\build\dist\excalibur.development.js:9417:      this._pre
+Draw(ex, x, y);
+node_modules\excalibur\build\dist\excalibur.development.js:9418:      this._dra
+wImage(ex, 0, 0);
+node_modules\excalibur\build\dist\excalibur.development.js:9419:      this._pos
+tDraw(ex);
+node_modules\excalibur\build\dist\excalibur.development.js:9422:     * Apply af
+fine transformations to the graphics context to manipulate the graphic before {
+@apilink Graphic._drawImage}
+node_modules\excalibur\build\dist\excalibur.development.js:9427:    _preDraw(ex
+, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:9464:     * Apply an
+y additional work after {@apilink Graphic._drawImage} and restore the context s
+tate.
+node_modules\excalibur\build\dist\excalibur.development.js:9467:    _postDraw(e
+x) {
+node_modules\excalibur\build\dist\excalibur.development.js:9841:    _drawImage(
+ctx, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:9843:        this.cu
+rrentFrame.graphic.draw(ctx, x, y);
+node_modules\excalibur\build\dist\excalibur.development.js:9920:    _preDraw(ex
+, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:9922:      super._pr
+eDraw(ex, this.useAnchor ? x : 0, this.useAnchor ? y : 0);
+node_modules\excalibur\build\dist\excalibur.development.js:9924:    _drawImage(
+ex, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:9939:        graphic
+.draw(ex, pos.x, pos.y);
+node_modules\excalibur\build\dist\excalibur.development.js:10138:    _drawImage
+(ex, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:10143:      ex.drawI
+mage(this._bitmap, x, y);
+node_modules\excalibur\build\dist\excalibur.development.js:10524:    _preDraw(e
+x, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:10529:      super._p
+reDraw(ex, x, y);
+node_modules\excalibur\build\dist\excalibur.development.js:10531:    _drawImage
+(ex, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:10533:        ex.dra
+wImage(
+node_modules\excalibur\build\dist\excalibur.development.js:10563:    ImageWrapp
+ing2["Repeat"] = "Repeat";
+node_modules\excalibur\build\dist\excalibur.development.js:10571:      case "Re
+peat":
+node_modules\excalibur\build\dist\excalibur.development.js:10572:        return
+ "Repeat";
+node_modules\excalibur\build\dist\excalibur.development.js:10670:        case I
+mageWrapping.Repeat:
+node_modules\excalibur\build\dist\excalibur.development.js:10671:          gl.t
+exParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
+node_modules\excalibur\build\dist\excalibur.development.js:10674:          gl.t
+exParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.MIRRORED_REPEAT);
+node_modules\excalibur\build\dist\excalibur.development.js:10683:        case I
+mageWrapping.Repeat:
+node_modules\excalibur\build\dist\excalibur.development.js:10684:          gl.t
+exParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
+node_modules\excalibur\build\dist\excalibur.development.js:10687:          gl.t
+exParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.MIRRORED_REPEAT);
+node_modules\excalibur\build\dist\excalibur.development.js:10999:    _drawImage
+(ex, x, y, maxWidth) {
+node_modules\excalibur\build\dist\excalibur.development.js:11007:          spri
+te.draw(ex, x + xCursor, y + yCursor);
+node_modules\excalibur\build\dist\excalibur.development.js:11023:        this._
+preDraw(ex, x, y);
+node_modules\excalibur\build\dist\excalibur.development.js:11024:        this._
+drawImage(ex, 0, 0, maxWidth);
+node_modules\excalibur\build\dist\excalibur.development.js:11025:        this._
+postDraw(ex);
+node_modules\excalibur\build\dist\excalibur.development.js:11028:      this._pr
+eDraw(ex, x, y);
+node_modules\excalibur\build\dist\excalibur.development.js:11029:      this._dr
+awImage(ex, 0, 0, maxWidth);
+node_modules\excalibur\build\dist\excalibur.development.js:11030:      this._po
+stDraw(ex);
+node_modules\excalibur\build\dist\excalibur.development.js:11066:  class TiledS
+prite extends Sprite {
+node_modules\excalibur\build\dist\excalibur.development.js:11090:      return n
+ew TiledSprite({
+node_modules\excalibur\build\dist\excalibur.development.js:11104:      spriteCt
+x.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:11115:      const ti
+ledImageSource = ImageSource.fromHtmlCanvasElement(spriteCanvas, {
+node_modules\excalibur\build\dist\excalibur.development.js:11116:        wrappi
+ng: wrapping != null ? wrapping : ImageWrapping.Repeat,
+node_modules\excalibur\build\dist\excalibur.development.js:11129:      this.ima
+ge = tiledImageSource;
+node_modules\excalibur\build\dist\excalibur.development.js:11182:     * Find a 
+sprite by their x/y integer coordinates in the SpriteSheet and configures tilin
+g to repeat by default,
+node_modules\excalibur\build\dist\excalibur.development.js:11183:     * for exa
+mple `getTiledSprite(0, 0)` is the {@apilink TiledSprite} in the top-left
+node_modules\excalibur\build\dist\excalibur.development.js:11184:     * and `ge
+tTiledSprite(1, 0)` is the sprite one to the right.
+node_modules\excalibur\build\dist\excalibur.development.js:11189:     * spriteS
+heet.getTiledSprite(1, 0, {
+node_modules\excalibur\build\dist\excalibur.development.js:11193:     * x: ex.I
+mageWrapping.Repeat,
+node_modules\excalibur\build\dist\excalibur.development.js:11202:    getTiledSp
+rite(x, y, options) {
+node_modules\excalibur\build\dist\excalibur.development.js:11212:        return
+ TiledSprite.fromSprite(sprite, options);
+node_modules\excalibur\build\dist\excalibur.development.js:11241:      ctx.draw
+Image(
+node_modules\excalibur\build\dist\excalibur.development.js:11292:      ctx.draw
+Image(
+node_modules\excalibur\build\dist\excalibur.development.js:11417:    static dra
+w(debugDrawCall) {
+node_modules\excalibur\build\dist\excalibur.development.js:11421:      _Debug2.
+draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11426:      _Debug2.
+draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11432:        _Debug
+2.draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11440:      _Debug2.
+draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11446:        _Debug
+2.draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11462:      _Debug2.
+draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11467:      _Debug2.
+draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11477:      _Debug2.
+draw((ctx) => {
+node_modules\excalibur\build\dist\excalibur.development.js:11504:        backgr
+ound: Color.Transparent,
+node_modules\excalibur\build\dist\excalibur.development.js:11526:    get backgr
+oundColor() {
+node_modules\excalibur\build\dist\excalibur.development.js:11527:      return D
+ebug.config.settings.text.background;
+node_modules\excalibur\build\dist\excalibur.development.js:11564:    write(ctx,
+ text, pos, foreground, background) {
+node_modules\excalibur\build\dist\excalibur.development.js:11574:        const 
+bg = (_b = background != null ? background : this.backgroundColor) != null ? _b
+ : Color.Transparent;
+node_modules\excalibur\build\dist\excalibur.development.js:11776:    _drawImage
+(ctx, _x, _y) {
+node_modules\excalibur\build\dist\excalibur.development.js:11795:  class Parall
+axComponent extends Component {
+node_modules\excalibur\build\dist\excalibur.development.js:11796:    constructo
+r(parallaxFactor) {
+node_modules\excalibur\build\dist\excalibur.development.js:11798:      this.par
+allaxFactor = vec(1, 1);
+node_modules\excalibur\build\dist\excalibur.development.js:11799:      this.par
+allaxFactor = parallaxFactor != null ? parallaxFactor : this.parallaxFactor;
+node_modules\excalibur\build\dist\excalibur.development.js:11948:        this._
+camera.draw(this._graphicsContext);
+node_modules\excalibur\build\dist\excalibur.development.js:11961:          grap
+hics.onPreTransformDraw(this._graphicsContext, elapsed);
+node_modules\excalibur\build\dist\excalibur.development.js:11972:        const 
+parallax = entity.get(ParallaxComponent);
+node_modules\excalibur\build\dist\excalibur.development.js:11973:        if (pa
+rallax) {
+node_modules\excalibur\build\dist\excalibur.development.js:11974:          cons
+t oneMinusFactor = Vector.One.sub(parallax.parallaxFactor);
+node_modules\excalibur\build\dist\excalibur.development.js:11975:          cons
+t parallaxOffset = this._camera.drawPos.scale(oneMinusFactor);
+node_modules\excalibur\build\dist\excalibur.development.js:11976:          this
+._graphicsContext.translate(parallaxOffset.x, parallaxOffset.y);
+node_modules\excalibur\build\dist\excalibur.development.js:11983:          grap
+hics.onPreDraw(this._graphicsContext, elapsed);
+node_modules\excalibur\build\dist\excalibur.development.js:11989:          grap
+hics.onPostDraw(this._graphicsContext, elapsed);
+node_modules\excalibur\build\dist\excalibur.development.js:11996:            th
+is._camera.draw(this._graphicsContext);
+node_modules\excalibur\build\dist\excalibur.development.js:12000:          grap
+hics.onPostTransformDraw(this._graphicsContext, elapsed);
+node_modules\excalibur\build\dist\excalibur.development.js:12035:          grap
+hic == null ? void 0 : graphic.draw(this._graphicsContext, offsetX, offsetY);
+node_modules\excalibur\build\dist\excalibur.development.js:12118:      let mayb
+eParallax;
+node_modules\excalibur\build\dist\excalibur.development.js:12123:        maybeP
+arallax = entity.get(ParallaxComponent);
+node_modules\excalibur\build\dist\excalibur.development.js:12124:        let pa
+rallaxOffset;
+node_modules\excalibur\build\dist\excalibur.development.js:12125:        if (ma
+ybeParallax) {
+node_modules\excalibur\build\dist\excalibur.development.js:12126:          cons
+t oneMinusFactor = Vector.One.sub(maybeParallax.parallaxFactor);
+node_modules\excalibur\build\dist\excalibur.development.js:12127:          para
+llaxOffset = this._camera.pos.scale(oneMinusFactor);
+node_modules\excalibur\build\dist\excalibur.development.js:12129:        const 
+entityOffscreen = this._isOffscreen(transform, graphics, parallaxOffset);
+node_modules\excalibur\build\dist\excalibur.development.js:12140:    _isOffscre
+en(transform, graphics, parallaxOffset) {
+node_modules\excalibur\build\dist\excalibur.development.js:12146:        if (pa
+rallaxOffset) {
+node_modules\excalibur\build\dist\excalibur.development.js:12147:          boun
+ds = bounds.translate(parallaxOffset);
+node_modules\excalibur\build\dist\excalibur.development.js:12293:        (_b = 
+this._options) == null ? void 0 : _b.draw(ctx);
+node_modules\excalibur\build\dist\excalibur.development.js:12302:    NineSliceS
+tretch2["Tile"] = "tile";
+node_modules\excalibur\build\dist\excalibur.development.js:12303:    NineSliceS
+tretch2["TileFit"] = "tile-fit";
+node_modules\excalibur\build\dist\excalibur.development.js:12384:     * Draws 1
+ of the 9 tiles based on parameters passed in
+node_modules\excalibur\build\dist\excalibur.development.js:12385:     * context
+ is the ExcaliburGraphicsContext from the _drawImage function
+node_modules\excalibur\build\dist\excalibur.development.js:12398:    _drawTile(
+context, targetCanvas, destinationSize, horizontalStretch, verticalStretch, mar
+ginWidth, marginHeight) {
+node_modules\excalibur\build\dist\excalibur.development.js:12402:      const nu
+mTilesX = this._getNumberOfTiles(targetCanvas.width, destinationSize.x, horizon
+talStretch);
+node_modules\excalibur\build\dist\excalibur.development.js:12403:      const nu
+mTilesY = this._getNumberOfTiles(targetCanvas.height, destinationSize.y, vertic
+alStretch);
+node_modules\excalibur\build\dist\excalibur.development.js:12404:      for (let
+ i = 0; i < numTilesX; i++) {
+node_modules\excalibur\build\dist\excalibur.development.js:12405:        for (l
+et j = 0; j < numTilesY; j++) {
+node_modules\excalibur\build\dist\excalibur.development.js:12408:            nu
+mTilesX,
+node_modules\excalibur\build\dist\excalibur.development.js:12417:            nu
+mTilesY,
+node_modules\excalibur\build\dist\excalibur.development.js:12424:          cont
+ext.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12441:    _drawImage
+(ex, x, y) {
+node_modules\excalibur\build\dist\excalibur.development.js:12443:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12450:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12462:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12471:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12484:          this
+._drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12497:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12509:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12518:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12530:        this._
+drawTile(
+node_modules\excalibur\build\dist\excalibur.development.js:12555:      aCtx == 
+null ? void 0 : aCtx.drawImage(this._sourceSprite, 0, 0, this._canvasA.width, t
+his._canvasA.height, 0, 0, this._canvasA.width, this._canvasA.height);
+node_modules\excalibur\build\dist\excalibur.development.js:12559:      bCtx == 
+null ? void 0 : bCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12573:      cCtx == 
+null ? void 0 : cCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12587:      dCtx == 
+null ? void 0 : dCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12601:      eCtx == 
+null ? void 0 : eCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12615:      fCtx == 
+null ? void 0 : fCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12629:      gCtx == 
+null ? void 0 : gCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12643:      hCtx == 
+null ? void 0 : hCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12657:      iCtx == 
+null ? void 0 : iCtx.drawImage(
+node_modules\excalibur\build\dist\excalibur.development.js:12676:     * Returns
+ the number of tiles
+node_modules\excalibur\build\dist\excalibur.development.js:12678:    _getNumber
+OfTiles(tileSize, destinationSize, strategy) {
+node_modules\excalibur\build\dist\excalibur.development.js:12682:        case "
+tile":
+node_modules\excalibur\build\dist\excalibur.development.js:12683:          retu
+rn Math.ceil(destinationSize / tileSize);
+node_modules\excalibur\build\dist\excalibur.development.js:12684:        case "
+tile-fit":
+node_modules\excalibur\build\dist\excalibur.development.js:12685:          retu
+rn Math.ceil(destinationSize / tileSize);
+node_modules\excalibur\build\dist\excalibur.development.js:12689:     * Returns
+ the position and size of the tile
+node_modules\excalibur\build\dist\excalibur.development.js:12691:    _calculate
+Params(tileNum, numTiles, tileSize, destinationSize, strategy) {
+node_modules\excalibur\build\dist\excalibur.development.js:12698:        case "
+tile":
+node_modules\excalibur\build\dist\excalibur.development.js:12699:          if (
+tileNum === numTiles - 1) {
+node_modules\excalibur\build\dist\excalibur.development.js:12701:              
+tempPosition: tileNum * tileSize,
+node_modules\excalibur\build\dist\excalibur.development.js:12702:              
+tempSize: tileSize - (numTiles * tileSize - destinationSize)
+node_modules\excalibur\build\dist\excalibur.development.js:12706:              
+tempPosition: tileNum * tileSize,
+node_modules\excalibur\build\dist\excalibur.development.js:12707:              
+tempSize: tileSize
+node_modules\excalibur\build\dist\excalibur.development.js:12710:        case "
+tile-fit":
+node_modules\excalibur\build\dist\excalibur.development.js:12711:          cons
+t reducedTileSize = destinationSize / numTiles;
+node_modules\excalibur\build\dist\excalibur.development.js:12712:          cons
+t position = tileNum * reducedTileSize;
+node_modules\excalibur\build\dist\excalibur.development.js:12715:            te
+mpSize: reducedTileSize
+node_modules\excalibur\build\dist\excalibur.development.js:12720:  class TiledA
+nimation extends Animation {
+node_modules\excalibur\build\dist\excalibur.development.js:12732:      this._ti
+ledWidth = 0;
+node_modules\excalibur\build\dist\excalibur.development.js:12733:      this._ti
+ledHeight = 0;
+node_modules\excalibur\build\dist\excalibur.development.js:12736:      this._ti
+ledWidth = options.width;
+node_modules\excalibur\build\dist\excalibur.development.js:12737:      this._ti
+ledHeight = options.height;
+node_modules\excalibur\build\dist\excalibur.development.js:12742:          cons
+t tiledSprite = new TiledSprite({
+node_modules\excalibur\build\dist\excalibur.development.js:12750:          this
+.frames[i].graphic = tiledSprite;
+node_modules\excalibur\build\dist\excalibur.development.js:12751:          tile
+dSprite.ready.then(() => {
+node_modules\excalibur\build\dist\excalibur.development.js:12752:            ti
+ledSprite.sourceView = { ...tiledSprite.sourceView, ...this._sourceView };
+node_modules\excalibur\build\dist\excalibur.development.js:12754:          prom
+ises.push(tiledSprite.ready);
+node_modules\excalibur\build\dist\excalibur.development.js:12760:      return n
+ew TiledAnimation({
+node_modules\excalibur\build\dist\excalibur.development.js:12786:          grap
+hic.sourceView.height = this._tiledHeight || graphic.height;
+node_modules\excalibur\build\dist\excalibur.development.js:12787:          grap
+hic.destSize.height = this._tiledHeight || graphic.height;
+node_modules\excalibur\build\dist\excalibur.development.js:12788:          grap
+hic.sourceView.width = this._tiledWidth || graphic.width;
+node_modules\excalibur\build\dist\excalibur.development.js:12789:          grap
+hic.destSize.width = this._tiledWidth || graphic.width;
+node_modules\excalibur\build\dist\excalibur.development.js:12794:      return t
+his._tiledWidth;
+node_modules\excalibur\build\dist\excalibur.development.js:12797:      return t
+his._tiledHeight;
+node_modules\excalibur\build\dist\excalibur.development.js:12800:      this._ti
+ledWidth = width;
+node_modules\excalibur\build\dist\excalibur.development.js:12804:      this._ti
+ledHeight = height;
+node_modules\excalibur\build\dist\excalibur.development.js:12922:      this.bac
+kgroundColor = Color.ExcaliburBlue;
+node_modules\excalibur\build\dist\excalibur.development.js:12926:      const { 
+canvasElement, context, enableTransparency, snapToPixel, antialiasing: smoothin
+g, backgroundColor } = options;
+node_modules\excalibur\build\dist\excalibur.development.js:12933:      this.bac
+kgroundColor = backgroundColor != null ? backgroundColor : this.backgroundColor
+;
+node_modules\excalibur\build\dist\excalibur.development.js:12966:    drawImage(
+image, sx, sy, swidth, sheight, dx, dy, dwidth, dheight) {
+node_modules\excalibur\build\dist\excalibur.development.js:12976:      this.__c
+tx.drawImage.apply(this.__ctx, args);
+node_modules\excalibur\build\dist\excalibur.development.js:13102:      this.__c
+tx.fillStyle = this.backgroundColor.toString();
+node_modules\excalibur\build\dist\excalibur.development.js:14197:    draw(rende
+rer, elapsed) {
+node_modules\excalibur\build\dist\excalibur.development.js:14232:      renderer
+.draw(gl);
+node_modules\excalibur\build\dist\excalibur.development.js:14814:    draw(start
+, end, color, width = 2, dashed = false) {
+node_modules\excalibur\build\dist\excalibur.development.js:14940:    draw(point
+2, color, size) {
+node_modules\excalibur\build\dist\excalibur.development.js:15041:    draw(pos, 
+radius, color, stroke = Color.Transparent, strokeThickness = 0) {
+node_modules\excalibur\build\dist\excalibur.development.js:15211:        postpr
+ocessor.onDraw();
+node_modules\excalibur\build\dist\excalibur.development.js:15377:    draw(image
+, sx, sy, swidth, sheight, dx, dy, dwidth, dheight) {
+node_modules\excalibur\build\dist\excalibur.development.js:15517:  const frag$2
+ = "#version 300 es\n\nprecision mediump float;\n\n// UV coord\nin vec2 v_uv;\n
+\nin vec2 v_size; // in pixels\n\n// Color coord to blend with image\nin lowp v
+ec4 v_color;\n\n// Stroke color if used\nin lowp vec4 v_strokeColor;\n\n// Stro
+ke thickness if used\nin lowp float v_strokeThickness; // in pixels\n\n// Opaci
+ty\nin float v_opacity;\n\nout vec4 fragColor;\n\nvoid main() {\n    // modifie
+d from https://stackoverflow.com/questions/59197671/glsl-rounded-rectangle-with
+-variable-border\n    vec2 uv = v_uv;\n    vec2 fragCoord = uv * v_size;\n    f
+loat maxX = v_size.x - v_strokeThickness;\n    float minX = v_strokeThickness;\
+n    float maxY = v_size.y - v_strokeThickness;\n    float minY = v_strokeThick
+ness;\n\n    if (fragCoord.x < maxX && fragCoord.x > minX &&\n        fragCoord
+.y < maxY && fragCoord.y > minY) {\n      fragColor = v_color;\n    } else {\n 
+     fragColor = v_strokeColor;\n    }\n    fragColor.a *= v_opacity;\n    frag
+Color.rgb *= fragColor.a;\n\n    // vec2 v2CenteredPos     = abs(fragCoord - v_
+size.xy / 2.0);\n    // vec2 v2HalfShapeSizePx = v_size.xy/2.0 - v_strokeThickn
+ess/2.0;\n\n    // float fHalfBorderDist      = 0.0;\n    // float fHalfBorderT
+hickness = 0.0;\n\n    // if (fragCoord.x > max(v_radius, v_strokeThickness) &&
+ \n    //     fragCoord.x < v_size.x - max(v_radius, v_strokeThickness))\n    /
+/ {\n    //     fHalfBorderDist      = v2CenteredPos.y - v2HalfShapeSizePx.y;\n
+    //     fHalfBorderThickness = v_strokeThickness / 2.0;\n    // }\n    // el
+se if (fragCoord.y > max(v_radius, v_strokeThickness) && \n    //          frag
+Coord.y < v_size.y - max(v_radius, v_strokeThickness))\n    // {\n    //     fH
+alfBorderDist      = v2CenteredPos.x - v2HalfShapeSizePx.x;\n    //     fHalfBo
+rderThickness = v_strokeThickness / 2.0;\n    // }\n    // else\n    // {\n    
+//     vec2 edgeVec = max(vec2(0.0), v_radius - vec2(\n    //         uv.x > 0.
+5 ? v_size.x - fragCoord.x : fragCoord.x,\n    //         uv.y > 0.5 ? v_size.y
+ - fragCoord.y : fragCoord.y));\n        \n    //     float ellipse_ab    = v_r
+adius-v_strokeThickness;\n    //     vec2 ellipse_isect = (v_strokeThickness > 
+v_radius || v_strokeThickness > v_radius) ? vec2(0.0) :\n    //                
+             edgeVec.xy * ellipse_ab*ellipse_ab / length(ellipse_ab*edgeVec.yx)
+; \n            \n    //     fHalfBorderThickness = (v_radius - length(ellipse_
+isect)) / 2.0;\n    //     fHalfBorderDist      = length(edgeVec) - (v_radius -
+ fHalfBorderThickness);\n    // }\n\n    // vec4 v4FromColor = v_strokeColor;\n
+    // v4FromColor.rgb *= v4FromColor.a;\n    // vec4 v4ToColor   = vec4(0.0); 
+// background color is transparent\n    // if (fHalfBorderDist < 0.0) {\n    //
+     v4ToColor = v_color;\n    //     v4ToColor.rgb *= v4ToColor.a;\n    // }\n
+\n    // float mixPct = abs(fHalfBorderDist) - fHalfBorderThickness;\n\n    // 
+vec4 finalColor = mix(v4FromColor, v4ToColor, mixPct);\n    // gl_FragColor = f
+inalColor;\n}";
+node_modules\excalibur\build\dist\excalibur.development.js:15577:    draw(...ar
+gs) {
+node_modules\excalibur\build\dist\excalibur.development.js:15848:    draw(pos, 
+radius, color, stroke = Color.Transparent, strokeThickness = 0) {
+node_modules\excalibur\build\dist\excalibur.development.js:16000:    draw(image
+, sx, sy, swidth, sheight, dx, dy, dwidth, dheight) {
+node_modules\excalibur\build\dist\excalibur.development.js:16354:    draw(image
+, sx, sy, swidth, sheight, dx, dy, dwidth, dheight) {
+node_modules\excalibur\build\dist\excalibur.development.js:16486:      this._we
+bglCtx.draw(
+node_modules\excalibur\build\dist\excalibur.development.js:16506:      this._we
+bglCtx.draw("ex.debug-point", point2, pointOptions.color, pointOptions.size);
+node_modules\excalibur\build\dist\excalibur.development.js:16517:      this._we
+bglCtx.draw("ex.debug-circle", pos, radius, color, stroke, thickness);
+node_modules\excalibur\build\dist\excalibur.development.js:16551:      this.bac
+kgroundColor = Color.ExcaliburBlue;
+node_modules\excalibur\build\dist\excalibur.development.js:16569:        backgr
+oundColor,
+node_modules\excalibur\build\dist\excalibur.development.js:16605:      this.bac
+kgroundColor = backgroundColor != null ? backgroundColor : this.backgroundColor
+;
+node_modules\excalibur\build\dist\excalibur.development.js:16666:      gl.clear
+Color(this.backgroundColor.r / 255, this.backgroundColor.g / 255, this.backgrou
+ndColor.b / 255, this.backgroundColor.a);
+node_modules\excalibur\build\dist\excalibur.development.js:16701:      gl.texPa
+rameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
+node_modules\excalibur\build\dist\excalibur.development.js:16702:      gl.texPa
+rameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
+node_modules\excalibur\build\dist\excalibur.development.js:16766:    draw(rende
+rerName, ...args) {
+node_modules\excalibur\build\dist\excalibur.development.js:16812:          rend
+erer.draw(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7
+], args[8], args[9]);
+node_modules\excalibur\build\dist\excalibur.development.js:16846:    drawImage(
+image, sx, sy, swidth, sheight, dx, dy, dwidth, dheight) {
+node_modules\excalibur\build\dist\excalibur.development.js:16862:        this.d
+raw("ex.material", image, sx, sy, swidth, sheight, dx, dy, dwidth, dheight);
+node_modules\excalibur\build\dist\excalibur.development.js:16865:          this
+.draw(this.imageRenderer, image, sx, sy, swidth, sheight, dx, dy, dwidth, dheig
+ht);
+node_modules\excalibur\build\dist\excalibur.development.js:16867:          this
+.draw(this.imageRenderer, image, sx, sy, swidth, sheight, dx, dy, dwidth, dheig
+ht);
+node_modules\excalibur\build\dist\excalibur.development.js:16872:      this.dra
+w("ex.rectangle", start, end, color, thickness);
+node_modules\excalibur\build\dist\excalibur.development.js:16875:      this.dra
+w("ex.rectangle", pos, width, height, color, stroke, strokeThickness);
+node_modules\excalibur\build\dist\excalibur.development.js:16878:      this.dra
+w("ex.circle", pos, radius, color, stroke, thickness);
+node_modules\excalibur\build\dist\excalibur.development.js:16972:      gl.clear
+Color(this.backgroundColor.r / 255, this.backgroundColor.g / 255, this.backgrou
+ndColor.b / 255, this.backgroundColor.a);
+
+

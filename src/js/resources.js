@@ -1,8 +1,8 @@
 import { ImageSource, Sound, Resource, Loader, FontSource } from 'excalibur'
 
 const Resources = {
-    Background1: new ImageSource('images/Achtergrond1.png'),
-    Background2: new ImageSource('images/Achtergrond2.png'),
+    Background1: new ImageSource('images/achtergrond1.png'),
+    Background2: new ImageSource('images/achtergrond2.png'),
     Gameover: new ImageSource('images/gameover.png'),
     Coin: new ImageSource('images/coin.png'),
     Crate: new ImageSource('images/crate.png'),
