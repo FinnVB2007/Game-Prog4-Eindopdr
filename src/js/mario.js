@@ -111,18 +111,18 @@ export class Mario extends Actor {
         }
     }
 
-    //     meleeAttack() {
-    //         this.attackCooldown = 250
+    meleeAttack() {
+        this.attackCooldown = 250
 
-    //         const enemies = this.scene.actors.filter(actor => actor instanceof Enemy)
-    //         for (const enemy of enemies) {
-    //             const distance = enemy.pos.distance(this.pos)
-    //             if (distance < 95) {
-    //                 enemy.kill()
-    //                 this.scene.addScore(100)
-    //                 Resources.CoinSound.play()
-    //             }
-    //         }
-    //     }
+        const enemies = this.scene.actors.filter(actor => actor instanceof Enemy)
+        for (const enemy of enemies) {
+            const distance = enemy.pos.distance(this.pos)
+            if (distance < 95) {
+                enemy.kill()
+                this.scene.addScore(100)
+                Resources.CoinSound.play()
+            }
+        }
+    }
 
 }
