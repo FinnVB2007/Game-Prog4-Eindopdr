@@ -30,10 +30,6 @@ export class Enemy extends Actor {
             this.pos = new Vector(-margin, 80 + Math.random() * (height - 160))
         } else if (this.side === 'right') {
             this.pos = new Vector(width + margin, 80 + Math.random() * (height - 160))
-        } else if (this.side === 'top') {
-            this.pos = new Vector(80 + Math.random() * (width - 160), -margin)
-        } else {
-            this.pos = new Vector(80 + Math.random() * (width - 160), height + margin)
         }
     }
 

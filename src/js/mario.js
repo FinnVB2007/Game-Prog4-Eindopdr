@@ -18,6 +18,8 @@ export class Mario extends Actor {
         this.attackSprite.width = Resources.Mario.width
         this.attackSprite.height = Resources.Mario.height
         this.normalSprite = Resources.Mario.toSprite()
+        this.normalSprite.width = Resources.Mario.width
+        this.normalSprite.height = Resources.Mario.height
         this.pos = new Vector(engine.screen.resolution.width / 2, engine.screen.resolution.height / 2)
         this.body.collisionType = CollisionType.Active
         this.body.useGravity = false
@@ -38,8 +40,14 @@ export class Mario extends Actor {
             other.owner.kill()
         }
 
-        if (other.owner instanceof Enemy && this.attackCooldown === 0) {
-            this.takeDamage()
+        if (other.owner instanceof Enemy) {
+            if (this.attackCooldown > 0) {
+                other.owner.kill()
+                this.scene?.addScore(100)
+                Resources.CoinSound.play()
+            } else {
+                this.takeDamage()
+            }
         }
     }
 
